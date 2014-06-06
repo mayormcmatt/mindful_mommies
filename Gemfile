@@ -10,7 +10,6 @@ gem 'heroku', '~> 3.8.2'
 
 group :assets do
   gem 'uglifier', '>= 1.3.0'
-  gem 'haml', '~> 4.0.5'
   gem 'sass-rails', '~> 4.0.2'
   gem 'coffee-rails', '~> 4.0.0'
 end

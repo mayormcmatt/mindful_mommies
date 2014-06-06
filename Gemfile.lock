@@ -265,7 +265,6 @@ DEPENDENCIES
   database_cleaner
   factory_girl_rails
   faker
-  haml (~> 4.0.5)
   heroku (~> 3.8.2)
   jazz_hands
   jbuilder (~> 1.2)
