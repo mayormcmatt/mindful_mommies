@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.4'
 
 # Use postgresql as the database for Active Record
-gem 'pg'
+gem 'pg', '~> 0.17.1'
 
 gem 'heroku', '~> 3.8.2'
 
@@ -16,12 +16,14 @@ end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-gem 'compass'
 
-gem 'foundation-rails'
+# SASS-based stylesheet framework (http://compass-style.org/reference/compass/)
+gem 'compass', '~> 0.12.6'
+
+gem 'foundation-rails', '~> 5.2.3.0'
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 3.1.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -40,7 +42,7 @@ group :development do
   gem 'brakeman', :require => false
   gem 'annotate', ">=2.6.0"
   gem 'byebug'
-  gem 'jazz_hands'
+  gem 'jazz_hands', '~> 0.5.2'
 end
 
 group :test, :development do
@@ -50,11 +52,11 @@ group :test, :development do
 end
 
 group :test do
-  gem 'capybara'
-  gem 'launchy'
+  gem 'capybara', '~> 2.3.0'
+  gem 'launchy', '~> 2.4.2'
   gem 'shoulda-matchers', '~> 2.6.1'
-  gem 'faker'
-  gem 'database_cleaner'
+  gem 'faker', '~> 1.3.0'
+  gem 'database_cleaner', '~> 1.3.0'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
