@@ -11,6 +11,9 @@ class ArticlesController < ApplicationController
 
   def show
     get_article
+    # concerning creation of comments in show page
+    @comment = Comment.new
+    @comment.article_id = @article.id
   end
 
   def new
