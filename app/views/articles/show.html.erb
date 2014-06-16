@@ -10,5 +10,7 @@
 <!-- path to partial of form for entering comments to article -->
 <%= render partial: 'comments/comments_form' %>
 
+<h4>Comments (<%= @article.comments.size %>)</h4>
+
 <!-- path to comment partial in articles folder -->
 <%= render partial: 'articles/comment', collection: @article.comments %>

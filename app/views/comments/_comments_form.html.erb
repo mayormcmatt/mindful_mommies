@@ -1,13 +1,11 @@
 <h4>Post a Comment</h4>
 <%= form_for [ @article, @comment] do |f| %>
   <p>
-    <%= f.label :author_name %>
-    <%= f.text_field :author_name %>
+    <%= f.text_field :author_name, :placeholder => "Your Name" %>
   </p>
 
   <p>
-    <%= f.label :body %>
-    <%= f.text_field :body %>
+    <%= f.text_field :body, :placeholder => "Write Your Comments Here" %>
   </p>
 
   <p>
