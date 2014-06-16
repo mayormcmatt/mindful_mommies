@@ -21,6 +21,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
+    # article_params located in articles_helper
     @article = Article.new(article_params)
     @article.save
     flash.notice = "'#{@article.title}' now posted!"
