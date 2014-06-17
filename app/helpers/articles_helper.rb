@@ -1,5 +1,6 @@
 module ArticlesHelper
   def article_params
-    params.require(:article).permit(:title, :body)
+    # strong params for article creation, tagging
+    params.require(:article).permit(:title, :body, :tag_list)
   end
 end
