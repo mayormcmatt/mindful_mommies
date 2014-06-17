@@ -2,6 +2,13 @@
 
 <p><%= @article.body %></p>
 
+<p>
+  Tags:
+  <% @article.tags.each do |tag| %>
+    <%= link_to tag.name , tag_path(tag) %>
+    <% end %>
+</p>
+
 <%= link_to "Edit", edit_article_path(@article) %>
 <!-- alert message will pop up upon request to delete -->
 <%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete?"} %>
