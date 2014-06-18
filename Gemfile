@@ -8,6 +8,8 @@ gem 'pg', '~> 0.17.1'
 
 gem 'heroku', '~> 3.8.2'
 
+gem 'paperclip', '~> 4.1.1'
+
 group :assets do
   gem 'uglifier', '>= 1.3.0'
   gem 'sass-rails', '~> 4.0.2'
